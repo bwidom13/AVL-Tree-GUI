@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="static/styles.css">
+    <title>AVL Tree GUI</title>
+</head>
+
+<body id="body">
+    <div id="title">
+        AVL Balanced Binary Search Tree
+    </div>
+    <div id="emptyMessage">
+        Type an integer and click the add button to begin adding values
+        to the binary search tree. 
+        <br/>
+        Or hover over autofill to insert incremental or random integers.
+    </div>
+    <div class="Node Container" id="root"></div>
+    </div>
+    </div>
+    <div id="inputContainer">
+        <div class="inputs">
+            <input id="text">
+            <input id="addButton" class="button" onclick="avlAdd()" type="button" value="Add" />
+            <input id="removeButton" class="button" onclick="remove()" type="button" value="Remove" />
+            <input class="button" onclick="clearTree()" type="button" value="Clear" />
+            <div class="inputs">
+                <div id="dropdown" style="float: left; overflow: hidden; width: 100%;">
+                    <input class="button" type="button" value="Autofill" />
+                    <div id="dropdown-contents">
+                        <div class="inputs">
+                            <input id="autofill-text" placeholder="# of elements to autofill" class="dropdown-text">
+                            <input class="dropdown-button" onclick="incrementAutofill()" type="button" value="Increment" />
+                            <input class="dropdown-button" onclick="randomAutofill()" type="button" value="Random" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="errorMessageContainer">
+        <div id="errorMessage">                                    
+        </div>
+        <button id="errorMessageButton" onclick="clearMessage()">OK</button>
+    </div>
+</body>
+<script src="static/script.js"></script>
+
+</html>

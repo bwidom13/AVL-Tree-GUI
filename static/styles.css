@@ -1,0 +1,95 @@
+.Node{        
+    margin: 1px;
+    display:flex;
+    flex-direction: column;    
+    background-color: black;
+    width:100%    
+}
+.ChildrenContainer{
+    display:flex;    
+    align-items: flex-start;
+    
+}
+.DataContainer{
+    display:flex;
+    justify-content: center;
+    background-color: papayawhip;
+    font-size: 40px;    
+}
+.Container{    
+    height:400px;
+}
+body{
+    background-color: black;
+}
+#title{
+    color: white;
+    display: flex;
+    font-size: 36px;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+#inputContainer{
+    width: 100%;
+    display: flex;
+    justify-content:center;        
+}
+.inputs{
+    width: 100%;
+    display: flex;
+    align-items:center;    
+    margin-top: 1px;
+}
+#text{
+    width:50%;
+    margin-left: 2px;    
+    height:40px;
+    font-size: 32px;
+}
+.button{
+    margin-left: 2px;
+    height:46px;
+    width: 30%;   
+    font-size: 24px;    
+    cursor: pointer;
+}
+#emptyMessage{
+    color: white;    
+    font-size: 24px;
+    position: relative;
+    top:150px;        
+}
+#dropdown-contents{
+    display: none;  
+    position: absolute; 
+    z-index: 1; 
+    padding-left: 2px;
+}
+#dropdown:hover #dropdown-contents{
+    display: flex;    
+}
+.dropdown-button{
+    height:30px;    
+}
+.dropdown-text{
+    height:24px;
+}
+#errorMessage{
+    color:red;
+    margin-top: 4px;
+    font-style: italic;
+    font-size: 20px;    
+    display: flex;
+}
+#errorMessageContainer{
+    width:100%;    
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 4px;
+}
+#errorMessageButton{
+    margin-left: 4px;
+    display: none;
+}
+

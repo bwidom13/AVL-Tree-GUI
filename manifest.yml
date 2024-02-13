@@ -1,0 +1,8 @@
+---
+applications:
+- name: avl-tree-gui
+  memory: 32M
+  disk_quota: 64M
+  instances: 1  
+  buildpacks:
+  - staticfile_buildpack
